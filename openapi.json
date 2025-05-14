@@ -6,10 +6,10 @@
     "description": "Schedules Google Calendar events via HTTP POST"
   },
   "servers": [
-    { "url": "https://script.google.com/macros/s/AKfycbwCCkPbdbJ2QqRB8A62raq5X6Y3aDVC5tQ085nKhuUeJg9L5NxvO-kmJj6eRZYibUgdRA/exec" }
+    { "url": "https://script.google.com" }
   ],
   "paths": {
-    "/": {
+    "/macros/s/AKfycwbCCkPbdbJ2QqR8BA62raq5X6Y3aDVC5t0Q85nKhuUeJq9L5Nxv0-kmJjeRZYibUgdRA/exec": {
       "post": {
         "summary": "Schedule an event",
         "requestBody": {
