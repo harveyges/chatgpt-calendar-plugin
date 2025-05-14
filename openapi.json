@@ -1,0 +1,39 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Calendar Scheduler API",
+    "version": "1.0.0",
+    "description": "Schedules Google Calendar events via HTTP POST"
+  },
+  "servers": [
+    { "url": "https://script.google.com/macros/s/AKfycbwCCkPbdbJ2QqRB8A62raq5X6Y3aDVC5tQ085nKhuUeJg9L5NxvO-kmJj6eRZYibUgdRA/exec" }
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "summary": "Schedule an event",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "title":    { "type": "string" },
+                  "date":     { "type": "string", "format": "date" },
+                  "time":     { "type": "string" },
+                  "duration": { "type": "integer" }
+                },
+                "required": ["title","date","time","duration"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Event scheduled" },
+          "400": { "description": "Bad request" }
+        }
+      }
+    }
+  }
+}
