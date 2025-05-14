@@ -3,13 +3,15 @@
   "info": {
     "title": "Calendar Scheduler API",
     "version": "1.0.0",
-    "description": "Schedules Google Calendar events via HTTP POST"
+    "description": "Schedules Google Calendar events via HTTP POST."
   },
   "servers": [
-    { "url": "https://script.google.com" }
+    {
+      "url": "https://script.google.com"
+    }
   ],
   "paths": {
-    "/macros/s/AKfycbwG_sRYMmctcZ7bVOqjLz4dtVeHToY6hUoyWcF0fXxjaH7CnmRjFHbtdoQtrOt4e3ppBg/exec": {
+    "/macros/s/AKfycbwwsn9ehKaJ5fg_I-MqB17SJSyD8IoHIWmqtXiKqjDookSL1GidoKHQrMsVYvL6AbKQpA/exec": {
       "post": {
         "operationId": "scheduleEvent",
         "summary": "Schedule an event",
