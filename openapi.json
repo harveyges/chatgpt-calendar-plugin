@@ -9,7 +9,7 @@
     { "url": "https://script.google.com" }
   ],
   "paths": {
-    "/macros/s/AKfycbwwsn9ehKaJ5fg_I-MqB17SJSyD8IoHIWmqtXiKqjDookSL1GidoKHQrMsVYvL6AbKQpA/exec": {
+    "/macros/s/AKfycbxeHbbd6_kE39e-MQuAWy2C7cFYTFHw8l7edcp0PTJ-jKS1WktRwAZJRrcdpNBVedEQOw/exec": {
       "post": {
         "operationId": "scheduleEvent",
         "summary": "Schedule an event",
